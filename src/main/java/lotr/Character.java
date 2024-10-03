@@ -16,15 +16,14 @@ public abstract class Character {
         return hp > 0;
     }
 
-    public String ToString() {
-        return this.getClass().getName() + "{}";
-    }
-
     public void setHp(int newHp) {
         hp = Math.max(newHp, 0);
     }
 
     public void setPower(int newPower) {
         power = Math.max(newPower, 0);
+    }
+    public String toString() {
+        return this.getClass().getSimpleName() + String.format("{hp=%d, power=%d}", this.hp, this.power);
     }
 }
