@@ -1,3 +1,5 @@
 .idea/
 target/
 src/main/java/lotr/.DS_Store
+src/.DS_Store
+src/test/.DS_Store
